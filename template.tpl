@@ -121,7 +121,7 @@ if (getType(data.order_lines) != "array") {
   order_lines = data.order_lines;
 }
 
-let url = "https://widget.volumental.com/embed.js";
+const url = "https://widget.volumental.com/embed.js";
 
 // Make sure we have the permissions to inject the volumental script.
 if (!queryPermission('inject_script', url)) {
