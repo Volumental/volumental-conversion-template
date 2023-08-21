@@ -45,15 +45,7 @@ ___TEMPLATE_PARAMETERS___
         "type": "NON_EMPTY"
       }
     ],
-    "help": "Your unique Volumental Token that have been provided to you from Volumental."
-  },
-  {
-    "type": "CHECKBOX",
-    "name": "dev",
-    "checkboxText": "Enable",
-    "simpleValueType": true,
-    "help": "If enabled staging environment will be used.",
-    "displayName": "Development Mode"
+    "help": "Your unique Volumental Token that has been provided to you from Volumental."
   },
   {
     "type": "GROUP",
@@ -129,11 +121,7 @@ if (getType(data.order_lines) != "array") {
   order_lines = data.order_lines;
 }
 
-// Pick the correct url depending on if we are in dev or not.
-let url = "https://widget.volumental.dev/embed.js";
-if (!data.dev) {
-  url = "https://widget.volumental.com/embed.js";
-}
+const url = "https://widget.volumental.com/embed.js";
 
 // Make sure we have the permissions to inject the volumental script.
 if (!queryPermission('inject_script', url)) {
