@@ -16,5 +16,9 @@ homepage: "https://volumental.com/"
 documentation: "https://developer.volumental.com/docs/ecom-widget"
 versions:
   # Latest version
+  - sha: 4b1811c92d407d1bc98ebf1362ae0c1ca024c413
+    changeNotes: Removed dev setting. Always run against production.
+
+  # Older versions
   - sha: ffab25967ee70dbde4e801b239c34b4f567fb832
     changeNotes: Added Volumental Conversion Template, added license and metadata files, updated README
